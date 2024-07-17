@@ -36,18 +36,18 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: #fff;
     font-weight: 600;
 }
 
 .nav-item.active a {
     color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+    border-bottom: 3px solid #264340;
 }
 
 .nav-item a:hover {
     color: #5e5c5c;
-    border-bottom: 3px solid #ffe100;
+    border-bottom: 3px solid #264340;
 }
 
 /* Estilização do menu versão mobile */

@@ -31,3 +31,59 @@
         transform: translate(-50%, -50%);
     }
 }
+
+#hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+#subtitle-hero {
+    font-size: 3rem;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#name-developer {
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#name-developer .name-part {
+    font-family: "Julius Sans One", sans-serif;
+    white-space: nowrap;
+}
+
+#hero-astronaut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.astronaut {
+    width: 20rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
