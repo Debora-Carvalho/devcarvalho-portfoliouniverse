@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/svg" href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Débora Carvalho</title>
 </head>
 <body>
-    <header></header>
+    <audio id="background-music" src="sounds" loop></audio>
+    <header>
+        <nav id="navbar">
+            <div class="logo-site">
+                <p>Débora Carvalho</p>
+            </div>
+
+            <ul id="nav_list">
+                <li class="nav-item"><a href="#about">Sobre</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#services">Serviços</a></li>
+                <li class="nav-item"><a href="#projects">Projetos</a></li>
+                <li class="nav-item"><a href="#contacts">Contatos</a></li>
+            </ul>
+
+            <div class="sound-button" onclick="toggleMusic()">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list">
+                    <li class="nav-item"><a href="#about">Sobre</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#services">Serviços</a></li>
+                    <li class="nav-item"><a href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a href="#contacts">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section id="hero"></section>
+        <section id="hero">
+            <div id="hero-text">
+                <h1 id="name-developer">Debora Carvalho</h1>
+                <h2 id="subtitle-hero">Creative developer</h2>
+            </div>
+        </section>
         <section id="about"></section>
         <section id="skills"></section>
         <section id="services"></section>
         <section id="projects"></section>
     </main>
-    <footer></footer>
+    <footer id="contacts"></footer>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/soundbutton.js"></script>
 </body>
 </html>
