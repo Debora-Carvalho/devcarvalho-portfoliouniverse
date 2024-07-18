@@ -1,12 +1,11 @@
 .hero {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: linear-gradient(to bottom, #020e0c, #264340);
-    color: white;
+    color: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -33,57 +32,48 @@
 }
 
 #hero-text {
-    position: relative;
-    z-index: 1;
+    margin-top: 150px;
 }
 
 #subtitle-hero {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    letter-spacing: 8px;
     font-size: 3rem;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    text-transform: uppercase;
     margin: 0;
 }
 
 #name-developer {
-    font-size: 8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-size: 12rem;
+    text-transform: uppercase;
+    text-align: center;
     width: 100%;
     margin: 0;
-    position: relative;
-    z-index: 1;
-}
-
-#name-developer .name-part {
-    font-family: "Julius Sans One", sans-serif;
-    white-space: nowrap;
 }
 
 #hero-astronaut {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    margin-top: -120px;
 }
 
 .astronaut {
-    width: 20rem;
+    width: 25rem;
     animation: float 4s ease-in-out infinite;
+    transform: rotate(-10deg); 
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(-10deg);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) rotate(-10deg);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(-10deg);
     }
 }
 
